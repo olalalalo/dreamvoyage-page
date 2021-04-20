@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dreamvoyage</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/toolbox.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700|Oswald|Raleway&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9ca2fb0486.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="center-wrapper"></div>
+
+    <aside></aside>
+
+    <main>
+
+        <section class="contact">
+            <div class="content-wrapper">
+                <h3 class="heading-style-1"><span class="text-underline">K</span>ontakt</h3>
+                <div class="contact-data">
+                    <div class="contact-details">
+                        <h3 class="heading-style-2">Dane kontaktowe</h3>
+                        <h4 class="heading-style-4">Dreamvoyage</h4>
+                        <div class="adress">ul. Handlowa 1 </br> 15-399 Białystok</div>
+                        <h4 class="heading-style-4">Infolinia</h4>
+                        <a href="tel:+48 12 222 333 444">+48 12 222 333 444</a>
+                        <h4 class="heading-style-4">E-mail</h4>
+                        <a href="mailto:hello@dreamvoyage.eu">hello@dreamvoyage.eu</a>
+                    </div>
+                </div>
+        </section>
+
+        <section class="table-hours">
+            <div class="content-wrapper">
+                <h4 class="heading-style-4 table-hours-title">Godziny otwarcia</h4>
+            </div>
+
+            <table class="open-hours">
+                <tr>
+                    <td>Poniedziałek</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Wtorek</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Środa</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Czwartek</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Piątek</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Sobota</td>
+                    <td>8:00 - 12:00</td>
+                </tr>
+            </table>
+        </section>
+
+        <div class="content-wrapper">
+
+            <section class="contact-form">
+                <h3 class="heading-style-2">Formularz kontaktowy</h3>
+                <form action="">
+
+                    <div class="form-field">
+                        <label class="form-label form-required" for="regform-name">Imię i nazwisko</label>
+                        <div class="form-control-wrapper">
+                            <input class="form-control" id="regform-name" type="text" name="regform[name]" required>
+                        </div>
+                        <div class="form-errors">Podane pole jest wymagane</div>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-label form-required" for="regform-email">Email</label>
+                        <div class="form-control-wrapper">
+                            <input class="form-control" id="regform-email" type="email" name="regform[email]" required>
+                        </div>
+                        <div class="form-errors"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-label" for="regform-phone">Telefon</label>
+                        <div class="form-control-wrapper">
+                            <input class="form-control" id="regform-phone" type="tel" name="regform[phone]"
+                                placeholder="+XX XXX XXX XXX">
+                        </div>
+                        <div class="form-errors"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-label form-required" for="regform-package">Powód kontaktu </label>
+
+                        <div class="form-control-wrapper">
+                            <select class="form-control" id="regform-package" name="regform[package]" required>
+                                <option value="" disabled selected>wybierz</option>
+                                <option value="v1">Opcja 1</option>
+                                <option value="v2">Opcja 2</option>
+                                <option value="v3">Opcja 3</option>
+                                <option value="v4">Opcja 4</option>
+                            </select>
+                        </div>
+                        <div class="form-errors"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <span class="form-label form-required">Czy jesteś naszym klientem?</span>
+
+                        <div class="form-control-wrapper form-client-radio">
+                            <input id="client-yes" name="regform[accountType]" type="radio" value="premium" required>
+                            <label for="client-yes">
+                                <span class="form-radio"></span>
+                                <span class="label-text font-style-labels">Tak</span>
+                            </label>
+
+                            <input id="client-no" name="regform[accountType]" type="radio" value="free">
+                            <label for="client-no">
+                                <span class="form-radio"></span>
+                                <span class="label-text font-style-labels">Nie</span>
+                            </label>
+                        </div>
+                        <div class="form-errors"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <span class="form-label">Preferowany dzień kontaktu</span>
+
+                        <div class="form-control-wrapper checkbox-grid">
+                            <div class="form-checkbox-field">
+                                <input id="regform-products-1" name="regform[products][]" type="checkbox" value="p1">
+                                <label for="regform-products-1">
+                                    <span class="form-checkbox"></span>
+                                    <span class="label-text font-style-labels">poniedziałek</span>
+                                </label>
+                            </div>
+
+                            <div class="form-checkbox-field">
+                                <input id="regform-products-2" name="regform[products][]" type="checkbox" value="p2">
+                                <label for="regform-products-2">
+                                    <span class="form-checkbox"></span>
+                                    <span class="label-text font-style-labels">wtorek</span>
+                                </label>
+                            </div>
+
+                            <div class="form-checkbox-field">
+                                <input id="regform-products-3" name="regform[products][]" type="checkbox" value="p3">
+
+                                <label for="regform-products-3">
+                                    <span class="form-checkbox"></span>
+                                    <span class="label-text" font-style-labels>środa</span>
+                                </label>
+                            </div>
+
+                            <div class="form-checkbox-field">
+                                <input id="regform-products-3" name="regform[products][]" type="checkbox" value="p3">
+
+                                <label for="regform-products-3">
+                                    <span class="form-checkbox"></span>
+                                    <span class="label-text font-style-labels">czwartek</span>
+                                </label>
+                            </div>
+
+                            <div class="form-checkbox-field">
+                                <input id="regform-products-3" name="regform[products][]" type="checkbox" value="p3">
+
+                                <label for="regform-products-3">
+                                    <span class="form-checkbox"></span>
+                                    <span class="label-text font-style-labels">piątek</span>
+                                </label>
+                            </div>
+
+                            <div class="form-checkbox-field">
+                                <input id="regform-products-3" name="regform[products][]" type="checkbox" value="p3">
+
+                                <label for="regform-products-3">
+                                    <span class="form-checkbox"></span>
+                                    <span class="label-text font-style-labels">sobota</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-errors"></div>
+                    </div>
+
+                    <div class="form-field form-textarea-msg">
+                        <label class="form-label" for="regform-comments">Wiadomość</label>
+
+                        <div class="form-control-wrapper">
+                            <textarea class="form-control" id="regform-comments" name="regform[comments]"></textarea>
+                        </div>
+
+                        <div class="form-errors"></div>
+                    </div>
+
+                    <div class="form-field">
+                        <div class="form-control-wrapper form-rules">
+                            <input id="regform-rules" type="checkbox" name="regform[rules]" required>
+                            <label class="form-required" for="regform-rules">
+                                <span class="form-checkbox font-style-labels"></span>
+                                <span class="form-rule">Zgadzam się z regulaminem serwisu</span>
+                            </label>
+                            <div class="form-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="space">
+                        <button type="submit" class="order-btn">Zamawiam</button>
+                    </div>
+
+                </form>
+            </section>
+
+        </div>
+
+
+
+        <section class="map">
+            <div class="content-wrapper">
+                <h3 class="heading-style-2">Jak do nas dojechać</h3>
+            </div>
+            <img src="assets/map.png" alt="map" class="map-img">
+        </section>
+
+        <div class="parting-line"></div>
+    </main>
+
+
+    <footer></footer>
+
+</body>
+
+</html>
